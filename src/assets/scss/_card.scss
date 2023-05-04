@@ -1,0 +1,35 @@
+.card {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: 90% -0.5rem;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .inner {
+        background-color: $Dark_blue;
+        margin-top: 3rem;
+        border-radius: 20px;
+        height: 100%;
+        padding: 2rem;
+        color: $white;
+
+        h2 {
+            font-weight: $Medium;
+            font-size: $fs-sm;
+        }
+
+        h3 {
+            margin-top: 1.7rem;
+            font-size: $fs-lg;
+            font-weight: $Light;
+        }
+
+        p {
+            margin-top: 0.2rem;
+            color: $Pale_Blue;
+            font-size: $fs-sm;
+        }
+
+    }
+}
