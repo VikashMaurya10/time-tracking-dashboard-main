@@ -2,7 +2,6 @@ import Cards from "./components/Cards";
 import Header from "./components/Header";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 export function App() {
-  // const Navigate = Navigate();
   return (
     <BrowserRouter>
       <div className="app">

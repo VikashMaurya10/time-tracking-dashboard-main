@@ -1,17 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "./Card";
-import axios from "axios";
-const Grid = (props) => {
-  const [item, setItem] = useState([]);
-  useEffect(() => {
-    axios({
-      method: "get",
-      url: "/src/assets/data/data.json",
-    }).then((res) => {
-      setItem(res.data);
-    });
-  }, []);
 
+import item from "../assets/data/data.json";
+const Grid = (props) => {
   return (
     <>
       {item.map((value, index) => {

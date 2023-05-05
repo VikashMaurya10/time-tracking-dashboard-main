@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import img from "../assets/images/icon-ellipsis.svg";
+import React from "react";
 
 const Card = ({ Title, imgSrc, bg, current, previous }) => {
   return (
