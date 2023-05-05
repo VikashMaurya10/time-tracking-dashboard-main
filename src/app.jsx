@@ -1,4 +1,5 @@
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
             <Route path="/monthly" element={<Cards frame="monthly" />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

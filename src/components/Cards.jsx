@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 
 import item from "../assets/data/data.json";
-const Grid = (props) => {
+const Cards = (props) => {
   return (
     <>
       {item.map((value, index) => {
@@ -58,4 +58,4 @@ const Grid = (props) => {
   );
 };
 
-export default Grid;
+export default Cards;
