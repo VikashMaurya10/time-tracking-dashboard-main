@@ -1,30 +1,31 @@
 import React, { useEffect, useState } from "react";
 import img from "../assets/images/icon-ellipsis.svg";
 
-const Card = ({ Title, imgSrc, bg, array }) => {
-  // const [query, setQuery] = useState(null);
-
-  // useEffect(() => {
-  //   const urlParams = new URLSearchParams(window.location.search);
-  //   const q = urlParams.get("q");
-  //   setQuery(q);
-  //   // console.log(q);
-  // }, [query]);
-
+const Card = ({ Title, imgSrc, bg, current, previous }) => {
   return (
     <>
-      {console.log(array)}
       <div
         className="card"
-        style={{ backgroundImage: `url(${imgSrc})`, backgroundColor: `${bg}` }}
+        style={{
+          backgroundImage: `url(${imgSrc})`,
+          backgroundColor: `${bg}`,
+        }}
       >
-        <div className="inner ">
+        <div className="inner">
           <div className="d-f ai-c jc-sb">
             <h2>{Title}</h2>
-            <img src={img} alt="logo" />
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
           </div>
-          <h3>{array.weekly.previous}hrs</h3>
-          <p>Previous - {array.weekly.previous}hrs</p>
+          <div className="about">
+            <h3>{current}hrs</h3>
+            <p>Previous - {previous}hrs</p>
+          </div>
         </div>
       </div>
     </>

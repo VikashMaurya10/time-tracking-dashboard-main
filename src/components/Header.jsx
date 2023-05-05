@@ -5,21 +5,23 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__profile d-f fd-c">
+      <div className="header__profile d-f jc-sb fd-c">
         <img src={profileImg} alt="profile" />
-        <p>Report for</p>
-        <h1>
-          <span>Jeremy</span> Robson
-        </h1>
+        <div className="">
+          <p>Report for</p>
+          <h1>
+            <span>Jeremy</span> Robson
+          </h1>
+        </div>
       </div>
       <div className="header__navigation d-f fd-c">
-        <NavLink to="/?q=daily" className="link">
+        <NavLink to="/daily" className="link">
           Daily
         </NavLink>
-        <NavLink to="/?q=weekly" className="link">
+        <NavLink to="/weekly" className="link">
           Weekly
         </NavLink>
-        <NavLink to="/?q=monthly" className="link">
+        <NavLink to="/monthly" className="link">
           Monthly
         </NavLink>
       </div>

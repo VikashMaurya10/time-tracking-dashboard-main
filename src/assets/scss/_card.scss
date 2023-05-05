@@ -6,6 +6,10 @@
     border-radius: 20px;
     overflow: hidden;
 
+    @include maximum(mobile) {
+        min-height: 180px;
+    }
+
     .inner {
         background-color: $Dark_blue;
         margin-top: 3rem;
@@ -13,22 +17,58 @@
         height: 100%;
         padding: 2rem;
         color: $white;
+        transition: background-color 0.1s ease-in-out;
+
+        &:hover {
+            background-color: hsl(236, 41%, 34%);
+        }
+
 
         h2 {
             font-weight: $Medium;
             font-size: $fs-sm;
         }
 
-        h3 {
-            margin-top: 1.7rem;
-            font-size: $fs-lg;
-            font-weight: $Light;
+        svg {
+            color: $Pale_Blue;
+            cursor: pointer;
+            transition: color 0.1s ease-in-out;
+
+            &:hover {
+                color: $white;
+            }
         }
 
-        p {
-            margin-top: 0.2rem;
-            color: $Pale_Blue;
-            font-size: $fs-sm;
+        .about {
+            @include maximum(mobile) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+
+            h3 {
+                margin-top: 1.7rem;
+                font-size: $fs-lg;
+                font-weight: $Light;
+
+                @include maximum(mobile) {
+                    font-size: 1.5rem;
+                    margin-top: 0;
+                    font-weight: $Regular;
+
+                }
+            }
+
+            p {
+                margin-top: 0.2rem;
+                color: $Pale_Blue;
+                font-size: $fs-sm;
+
+                @include maximum(mobile) {
+                    margin-top: 0;
+                }
+            }
         }
 
     }
