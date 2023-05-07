@@ -1,10 +1,10 @@
 import React from "react";
-import profileImg from "../assets/images/image-jeremy.png";
+import profileImg from "../assets/image/image-jeremy.png";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="header">
+    <div className="header">
       <div className="header__profile d-f jc-sb fd-c">
         <img src={profileImg} alt="profile" />
         <div className="">
@@ -25,7 +25,7 @@ const Header = () => {
           Monthly
         </NavLink>
       </div>
-    </header>
+    </div>
   );
 };
 

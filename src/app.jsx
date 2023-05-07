@@ -6,7 +6,7 @@ export function App() {
   return (
     <BrowserRouter>
       <div className="app">
-        <div className="app__main">
+        <main className="app__main">
           <Header />
           <Routes>
             <Route path="/" element={<Navigate to="/daily" replace={true} />} />
@@ -14,7 +14,7 @@ export function App() {
             <Route path="/weekly" element={<Cards frame="weekly" />} />
             <Route path="/monthly" element={<Cards frame="monthly" />} />
           </Routes>
-        </div>
+        </main>
         <Footer />
       </div>
     </BrowserRouter>
